@@ -1,0 +1,11 @@
+{
+    "products": {
+      "cart": "Add to Cart"
+    },
+    "hello": {
+      "greeting": "Hello World!!"
+    },
+    "contact": {
+      "greeting": "Hello Contact!!"
+    }
+  }
