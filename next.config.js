@@ -6,7 +6,12 @@ const nextConfig = {
         return [
           {
             source: '/hello',
-            destination: '/en/hello',
+            destination: '/th/hello',
+            permanent: true,
+          },
+          {
+            source: '/abcdef',
+            destination: '/th/hello',
             permanent: true,
           },
           {
