@@ -15,3 +15,14 @@ export default async function Home({
 export async function generateStaticParams() {
   return [{ lang: "en" }, { lang: "th" }];
 }
+
+const englishMetadata = {
+  title: "Hello Enlish Man",
+};
+const portugueseMetadata = {
+  title: "Hello Thai Man",
+};
+
+export async function generateMetadata({ params }: any) {
+  return params.lang === "en" ? englishMetadata : portugueseMetadata;
+}

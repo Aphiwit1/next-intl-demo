@@ -4,6 +4,7 @@ import ContactIntro from './components/ContactIntro';
 
 
 
+
 export default async function page({
     params: { lang },
   }: {
