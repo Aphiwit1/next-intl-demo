@@ -10,6 +10,7 @@ export default function ContactIntro({ dict }: any) {
   const pathName = usePathname()
   const currentLang = pathName.split('/')[1]; 
   const switchLang = (lang: string) => {
+    console.log('log time: 05/01/2023')
  
     const newPathname = pathName.replace(`/${currentLang}`, `/${lang}`);
     router.push(newPathname);
