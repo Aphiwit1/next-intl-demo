@@ -1,31 +1,27 @@
 /** @type {import('next').NextConfig} */
+const withNextIntl = require('next-intl/plugin')();
+
 const nextConfig = {
     output: 'export',
     images: { unoptimized: false },
     async redirects() {
         return [
           {
-            source: '/',
-            destination: '/th',
+            source: '/about',
+            destination: '/',
             permanent: true,
           },
           {
-            source: '/hello',
-            destination: '/th/hello',
-            permanent: true,
-          },
-          {
-            source: '/abcdef',
-            destination: '/th/hello',
-            permanent: true,
-          },
-          {
-            source: '/nueng',
-            destination: '/th/hello',
+            source: '/contact',
+            destination: '/en/contact',
             permanent: true,
           },
         ]
       },
 }
 
-module.exports = nextConfig
+// module.exports = withNextIntl({});
+// module.exports = nextConfig
+
+
+module.exports = withNextIntl(nextConfig);
